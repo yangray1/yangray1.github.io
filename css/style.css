@@ -18,13 +18,14 @@ body, html {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    position: relative;
     
 }
 #profilePicture {
 	border-radius: 50%;
-	width: 300px;
-	height: 300px;
+	max-width: 250px;
+	height: 250px;
     background-size: cover;
     
 	/* white border around circle */
@@ -39,6 +40,7 @@ body, html {
     width: 60px;
     height: 60px;
     margin: 10px;
+    float: left;
 }
 .bgInnerFrame {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -49,11 +51,19 @@ body, html {
 
     /* Makes this box in the centre */
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 70%;
+    min-width: 60%; /* so the elements inside the frame wont be sticking out as screen width shrinks */ 
     padding: 20px;
     text-align: center;
-  }
+    height: auto;
+}
+.profilePageContainer{
+    float: left;
+}
+.schoolContainer {
+    /* width: 50px; */
+    height: auto;
+}

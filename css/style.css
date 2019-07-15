@@ -26,7 +26,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 .bgInnerFrame {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -35,9 +34,9 @@ body, html {
 
     /* Makes this box in the centre */
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     min-width: 50%; /* so the elements inside the frame wont be sticking out as screen width shrinks */
     z-index: 2;
     padding: 20px;
@@ -48,7 +47,7 @@ body, html {
 }
 #profilePicture {
     border-radius: 50%;
-    width: 36vh;
+    width: calc(200px + 2vw );
     background-size: cover;
 
     /* white border around circle */
@@ -58,7 +57,7 @@ body, html {
     display: inline-block;
 }
 #name {
-    font-size: calc(28px + 1.5vw); /* 28px + 1.5% of viewport width */
+    font-size: calc(20px + 1.5vw); /* 28px + 1.5% of viewport width */
     font-weight: bold;
 }
 #schoolPicture {
@@ -67,19 +66,18 @@ body, html {
     height: 60px;
     float: left;
 }
-.schoolInfoContainer {
-    list-style: none;
-    padding: 0px;
+.schoolInfo {
+    margin-bottom: 10px;
 }
 .schoolName {
-    font-size: 25px;
+    font-size: calc(15px + 1vw);
 }
 .programName {
-    font-size: 15px;
+    font-size: calc(10px + 1vw);
     font-style: italic;
 }
 .motto {
-    font-size: 25px;
+    font-size: calc(15px + 1vw);
 }
 .red {
     color: red;

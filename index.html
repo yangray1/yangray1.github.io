@@ -5,14 +5,14 @@
 
         <!-- Mobile friendly -->
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        
+
         <meta charset="utf-8">
         <!-- Styles -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
             <a class="navbar-brand" href="#">Raymond Yang</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,19 +26,28 @@
                 </div>
             </div>
         </nav>
-        
-        <div class="bgImage"></div>
-        sad
-        <div class="bgInnerFrame">
-            <div class="profilePageContainer">
-                <img id="profilePicture" src="images/background-image2.jpg">
-            </div>
 
-            <div id="name">Raymond Yang</div>
-            <div class="schoolContainer">
-                <img id="schoolPicture" src="images/uoft.jpg">
-                <span>University of Toronto - Computer Science Specialist</span>
+        <div class="bgImage"></div>
+        <div class="bgInnerFrame">
+            <div class="profilePicContainer">
+                <img id="profilePicture" src="images/profilePicture.jpg">
+            </div>
+            <div class="profileInfo">
+                <div id="name">Raymond Yang</div>
+                <div class="schoolContainer">
+                    <img id="schoolPicture" src="images/uoft.jpg">
+                    <ul class="schoolInfoContainer">
+                        <li><span class="schoolName">University of Toronto</span></li>
+                        <li><span class="programName">Computer Science Specialist</span></li>
+                    </ul>
+                </div>
+                <div class="motto">
+                    <span id="typedAnimation"></span>
+                </div>
             </div>
         </div>
+
+        <script src="js/typed.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
     </body>
 </html>

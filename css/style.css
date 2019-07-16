@@ -12,6 +12,7 @@ body, html {
     height: 100%;
     width: 100%;
 }
+
 .bgImage {
     /* The image used */
     background-image: url("../images/background-image.jpg");
@@ -27,9 +28,10 @@ body, html {
     background-size: cover;
     position: relative;
 }
+
 .bgInnerFrame {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgb(0, 0, 0);  /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
     color: white;
 
     /* Makes this box in the centre */
@@ -42,43 +44,53 @@ body, html {
     padding: 20px;
     text-align: center;
 }
-.profilePicContainer{
+
+.profilePicContainer {
     float: left;
 }
+
 #profilePicture {
     border-radius: 50%;
-    width: calc(200px + 2vw );
+    width: calc(200px + 2vw);
     background-size: cover;
 
     /* white border around circle */
     border: 3px solid #23252a;
 }
-.profileInfo{
+
+.profileInfo {
     display: inline-block;
 }
+
 #name {
     font-size: calc(20px + 1.5vw); /* 28px + 1.5% of viewport width */
     font-weight: bold;
 }
+
 #schoolPicture {
     border-radius: 50%;
     width: 60px;
     height: 60px;
     float: left;
 }
+
 .schoolInfo {
     margin-bottom: 10px;
 }
+
 .schoolName {
     font-size: calc(15px + 1vw);
 }
+
 .programName {
     font-size: calc(10px + 1vw);
     font-style: italic;
 }
+
 .motto {
     font-size: calc(15px + 1vw);
 }
+
 .red {
     color: red;
 }

@@ -11,6 +11,7 @@ body, html {
     padding: 0px;
     height: 100%;
     width: 100%;
+    background-color: #e9ebee;
 }
 
 .bgImage {
@@ -93,4 +94,62 @@ body, html {
 
 .red {
     color: red;
+}
+
+.description {
+    text-align: center;
+}
+
+.schoolPictureContainer {
+    /* display: inline-block; */
+    float: left;
+    /* margin-bottom: 30px; */
+        
+}
+
+.bodyContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%
+}
+
+.degreeInfoContainer {
+    margin-left: 120px;
+    padding-top: 10px;
+}
+
+.degreeInfoContainer div h2 {
+    font-size: calc(15px + 1vw)
+}
+
+.degreeInfoContainer h6 {
+    font-size: calc(10px + 0.5vw)
+}
+
+.expectedGraduateYear {
+    float: right; 
+}
+
+.workContainer {
+    margin-top: 30px;
+}
+
+.workInfoContainer {
+    margin-left: 120px;
+}
+
+.workAchievements {
+    font-size: 20px;
+    font-style: bold;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+} 
+
+.titles {
+    margin-top: 40px;
 }

@@ -4156,6 +4156,18 @@ input[type="button"].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
+.navbar-bot {
+  position: relative;
+  display: -ms-flexbox;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
 
 .navbar > .container,
 .navbar > .container-fluid {

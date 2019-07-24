@@ -251,3 +251,9 @@ body, html {
     margin-right: 10px;
     margin-bottom: 5px;
 }
+
+.selectedSection {
+    border-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}

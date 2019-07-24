@@ -21,3 +21,9 @@ const resize = () => {
 
 window.addEventListener('DOMContentLoaded', resize);
 window.addEventListener('resize', resize);
+
+/* Scroll down animation */
+$('.scrollDownButton').on('click', (e) => {
+    $('html, body').animate({ scrollTop: $('.scrollDownButton').offset().top}, 500, 'linear');
+});
+

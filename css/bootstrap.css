@@ -4669,6 +4669,7 @@ input[type="button"].btn-block {
 }
 
 .card-deck {
+  margin-top: 25px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;

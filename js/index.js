@@ -16,7 +16,7 @@ const typedAnimation = new Typed('#typedAnimation', options);
 const background = $('.bgImage');
 const profileFrame = $('.bgInnerFrame');
 const resize = () => {
-    background.css("min-height", $(".bgInnerFrame").outerHeight() + $(".navbar").height());
+    background.css("min-height", $(".bgInnerFrame").outerHeight() + $(".navbar").height() + $(".page-scroll").height());
 }
 
 window.addEventListener('DOMContentLoaded', resize);

@@ -105,10 +105,7 @@ body, html {
 }
 
 .schoolPictureContainer {
-    /* display: inline-block; */
     float: left;
-    /* margin-bottom: 30px; */
-
 }
 .degreeContainer {
     margin-top: 30px;
@@ -160,6 +157,9 @@ body, html {
     margin-top: 40px;
 }
 
+.demoVideo {
+    margin-bottom: 10px;
+}
 /* To display projects */
 .card {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -294,3 +294,4 @@ body, html {
     padding-right: 0.6em;
     padding-left: 0.6em;
 }
+

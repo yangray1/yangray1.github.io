@@ -1,6 +1,7 @@
 .text-center {
     position: relative;
-    bottom: 15%;
+    bottom: 16%;
+    margin-bottom: -7%;
 }
 .page-scroll .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;

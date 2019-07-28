@@ -11,7 +11,37 @@ body, html {
     padding: 0px;
     height: 100%;
     width: 100%;
-    background-color: #e9ebee;
+    /* background-color: #e9ebee; */
+}
+
+.thickTitle {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.fadeFromBottom {
+    /* position: relative; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    /* background-image: -webkit-gradient(linear, from(#f5f7fa), color-stop(29%, #fff)); */
+    /* background-image: linear-gradient(0deg, #f5f7fa, #fff 29%); */
+    background-image: linear-gradient(0deg, #f5f7fa	, #fff 29%);
+    /* background-image: linear-gradient( #A0fffa ,#fff 20%); */
+    /* background-image: linear-gradient(0deg, #e6f6fa, #fff 29%); */
+    /* background-image: linear-gradient(0deg,#DCDEE1, #fff 29%); */
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f7fa), to(#fff)); */
+    /* background-image: linear-gradient(180deg, #e6ffff, #fff 25%); */
+    /* height: 100%; */
+}
+
+.fadeFromTop {
+    /* position: relative; */
+    /* padding-top: 131px; */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f7fa), to(#fff));
+    /* background-image: linear-gradient(180deg, #f5f7fa, #fff); */
+    background-image: linear-gradient(180deg, #fefaf8, #fff 35%);
+    padding-top: 8%
+
 }
 
 .bgImage {
@@ -44,6 +74,9 @@ body, html {
     z-index: 2;
     padding: 20px;
     text-align: center;
+    /* transition: all .15s ease-in; */
+    /* -webkit-transition: all .15s ease-in; */
+    /* -o-transition: all .15s ease-in; */
 }
 
 .profilePicContainer {
@@ -110,10 +143,10 @@ body, html {
 .degreeContainer {
     margin-top: 30px;
 }
-.bodyContainer {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%
+
+.bodyContainer, .topBodyContainer, .bottomBodyContainer {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .degreeInfoContainer {
@@ -151,6 +184,8 @@ body, html {
     width: 100px;
     height: 100px;
     float: left;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
 }
 
 .titles {
@@ -187,6 +222,7 @@ body, html {
 /* 'View more projects' button */
 .viewProjectButtonWrapper {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .viewProjectButton {

@@ -157,6 +157,7 @@ body, html {
 }
 .date {
     float: right;
+    font-weight: bold;
 }
 
 .workContainer {
@@ -166,10 +167,6 @@ body, html {
 .workInfoContainer {
     margin-left: 120px;
     padding-top: 10px;
-}
-
-.workAchievements {
-    font-style: bold;
 }
 
 .icon {

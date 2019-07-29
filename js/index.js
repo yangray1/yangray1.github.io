@@ -40,37 +40,37 @@ nbseHacksCard.addEventListener('mouseleave', () => {
     nbseHacksImage.src = "images/nsbeHacks.png";
 })
 
-// const RUHacksImage = document.querySelector('.RUHacksImage');
-const RUHacksVideo = document.querySelector('.RUHacksImage2');
-const RUHacksCard = document.querySelector('.RUHacksCard');
-
-RUHacksCard.addEventListener('mouseover', () => {
-    // RUHacksImage.src = "https://www.dropbox.com/s/d20btgpepsqz8qv/RUHacksClip.gif?dl=1";
-    if (!RUHacksVideo.src.includes("hoverClips/RUHacksClip.mp4")){
-
-        // play the video
-        RUHacksVideo.src = "hoverClips/RUHacksClip.mp4";
-        RUHacksVideo.get(0).play();
-
-        // Set the default img to not appear
-        RUHacksVideo.poster= "";
-        RUHacksVideo.width = $('.RUHacksCard').width;
-    }
-})
-RUHacksCard.addEventListener('mouseleave', () => {
-    // Clear the video and put back the default img
-    RUHacksVideo.src = "";
-    RUHacksVideo.poster = "images/teamJelly.png";
-})
-
-// /* RU Hacks hover clip */
-// const RUHacksImage = document.querySelector('.RUHacksImage');
+// // const RUHacksImage = document.querySelector('.RUHacksImage');
+// const RUHacksVideo = document.querySelector('.RUHacksImage2');
 // const RUHacksCard = document.querySelector('.RUHacksCard');
+
 // RUHacksCard.addEventListener('mouseover', () => {
-//     if (!RUHacksImage.src.includes("hoverClips/RUHacksClip.gif")){
-//         RUHacksImage.src = "hoverClips/RUHacksClip.gif";
+//     // RUHacksImage.src = "https://www.dropbox.com/s/d20btgpepsqz8qv/RUHacksClip.gif?dl=1";
+//     if (!RUHacksVideo.src.includes("hoverClips/RUHacksClip.mp4")){
+
+//         // play the video
+//         RUHacksVideo.src = "hoverClips/RUHacksClip.mp4";
+//         RUHacksVideo.get(0).play();
+
+//         // Set the default img to not appear
+//         RUHacksVideo.setAttribute('poster',"aa");
+//         RUHacksVideo.width = $('.RUHacksCard').width;
 //     }
 // })
 // RUHacksCard.addEventListener('mouseleave', () => {
-//     RUHacksImage.src = "images/teamJelly.png";
+//     // Clear the video and put back the default img
+//     RUHacksVideo.src = "";
+//     RUHacksVideo.poster = "images/teamJelly.png";
 // })
+
+/* RU Hacks hover clip */
+const RUHacksImage = document.querySelector('.RUHacksImage');
+const RUHacksCard = document.querySelector('.RUHacksCard');
+RUHacksCard.addEventListener('mouseover', () => {
+    if (!RUHacksImage.src.includes("hoverClips/RUHacksGifOpt54.gif")){
+        RUHacksImage.src = "hoverClips/RUHacksGifOpt54.gif";
+    }
+})
+RUHacksCard.addEventListener('mouseleave', () => {
+    RUHacksImage.src = "images/teamJelly.png";
+})

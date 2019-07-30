@@ -1,3 +1,2 @@
 # yangray1.github.io
-
-raymondyg.com
+<a target="_blank" href="http://www.raymondyg.com">raymondyg.com</a>

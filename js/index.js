@@ -18,7 +18,6 @@ const profileFrame = $('.bgInnerFrame');
 const resize = () => {
     background.css("min-height", $(".bgInnerFrame").outerHeight() + $(".navbar").height() + $(".page-scroll").height());
 }
-
 window.addEventListener('DOMContentLoaded', resize);
 window.addEventListener('resize', resize);
 
@@ -28,49 +27,32 @@ $('.scrollDownButton').on('click', (e) => {
 });
 
 /* Hovering project images plays its corresponding video */
-const nbseHacksImage = document.querySelector('.nsbeHacksImage');
-const nbseHacksCard = document.querySelector('.nsbeHacksCard');
-nbseHacksCard.addEventListener('mouseover', () => {
-    // nbseHacksImage.src = "https://media.giphy.com/media/MDfuWQGDK6AYLBuCde/giphy.gif";
-    if (!nbseHacksImage.src.includes("hoverClips/NSBEHacksClip.gif")){
-        nbseHacksImage.src = "hoverClips/NSBEHacksClip.gif";
+const source = document.createElement("source");
+
+const nsbeHacksVideo = document.querySelector('.nsbeHacksVideo');
+const nsbeHacksCard = document.querySelector('.nsbeHacksCard');
+nsbeHacksCard.addEventListener('mouseover', () => {
+    if (!(source.parentNode == nsbeHacksVideo)){
+        source.setAttribute('src', 'hoverClips/NSBEHacksClip.mp4');
+        nsbeHacksVideo.appendChild(source);
+        nsbeHacksVideo.play();
     }
 })
-nbseHacksCard.addEventListener('mouseleave', () => {
-    nbseHacksImage.src = "images/nsbeHacks.png";
+nsbeHacksCard.addEventListener('mouseleave', () => {
+    nsbeHacksVideo.pause();
+    source.remove()
 })
 
-// const RUHacksImage = document.querySelector('.RUHacksImage');
-const RUHacksVideo = document.querySelector('.RUHacksImage2');
+const RUHacksVideo = document.querySelector('.RUHacksVideo');
 const RUHacksCard = document.querySelector('.RUHacksCard');
-
 RUHacksCard.addEventListener('mouseover', () => {
-    // RUHacksImage.src = "https://www.dropbox.com/s/d20btgpepsqz8qv/RUHacksClip.gif?dl=1";
-    if (!RUHacksVideo.src.includes("hoverClips/RUHacks38MBVideo.mp4")){
-
-        // play the video
-        // RUHacksVideo.poster = "";
-
-        RUHacksVideo.src = "hoverClips/RUHacks38MBVideo.mp4";
-        // RUHacksVideo.get(0).play();
-
-        // Set the default img to not appear
+    if (!(source.parentNode == RUHacksVideo)){
+        source.setAttribute('src', 'hoverClips/RUHacksClip.mp4');
+        RUHacksVideo.appendChild(source);
+        RUHacksVideo.play();
     }
 })
 RUHacksCard.addEventListener('mouseleave', () => {
-    // Clear the video and put back the default img
-    RUHacksVideo.src = "";
-    RUHacksVideo.poster = "images/teamJelly.png";
+    RUHacksVideo.pause();
+    source.remove()
 })
-
-// /* RU Hacks hover clip */
-// const RUHacksImage = document.querySelector('.RUHacksImage');
-// const RUHacksCard = document.querySelector('.RUHacksCard');
-// RUHacksCard.addEventListener('mouseover', () => {
-//     if (!RUHacksImage.src.includes("hoverClips/RUHacksGifOpt54.gif")){
-//         RUHacksImage.src = "hoverClips/RUHacksGifOpt54.gif";
-//     }
-// })
-// RUHacksCard.addEventListener('mouseleave', () => {
-//     RUHacksImage.src = "images/teamJelly.png";
-// })
